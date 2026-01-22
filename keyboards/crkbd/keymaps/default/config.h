@@ -25,6 +25,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define QUICK_TAP_TERM 0
 //#define TAPPING_TERM 100
 
+// Время (мс) для активации комбо (по умолчанию 50)
+#define COMBO_TERM 40
+
+// Обработка модификаторов в комбо
+#define COMBO_MUST_HOLD_MODS      // Комбо сработает только при удержании модификаторов
+#define COMBO_MOD_TERM 200        // Таймаут для модификаторов
+
+// Игнорировать быстрые нажатия
+#define COMBO_IGNORE_MOD_TAP_INTERRUPT
+
+// Разрешить комбо на разных слоях
+#define COMBO_ONLY_FROM_LAYER 0   // Только с базового слоя
+// Или разрешить со всех:
+// #define COMBO_ALLOW_ACTION_KEYS
+
 #ifdef RGBLIGHT_ENABLE
     #define RGBLIGHT_EFFECT_BREATHING
     #define RGBLIGHT_EFFECT_RAINBOW_MOOD
