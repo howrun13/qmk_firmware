@@ -21,7 +21,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 
 //#define USE_MATRIX_I2C
-
+#define SPLIT_USB_DETECT
+#define USE_SERIAL
+#define SERIAL_USART_FULL_DUPLEX
 //#define QUICK_TAP_TERM 0
 //#define TAPPING_TERM 100
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET
