@@ -36,20 +36,6 @@
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_LED GP17
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_TIMEOUT 1000U
 
-#define COMBO_TERM 40
-
-// Обработка модификаторов в комбо
-#define COMBO_MUST_HOLD_MODS      // Комбо сработает только при удержании модификаторов
-#define COMBO_MOD_TERM 200        // Таймаут для модификаторов
-
-// Игнорировать быстрые нажатия
-#define COMBO_IGNORE_MOD_TAP_INTERRUPT
-
-// Разрешить комбо на разных слоях
-#define COMBO_ONLY_FROM_LAYER 0   // Только с базового слоя
-// Или разрешить со всех:
-// #define COMBO_ALLOW_ACTION_KEYS
-
 #ifdef OLED_ENABLE
 // settings for the oled keyboard demo with Adafruit 0.91" OLED display on the Stemma QT port
     #define OLED_DISPLAY_128X32
